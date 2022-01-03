@@ -42,7 +42,7 @@ function game() {
     let j=1;
     let Computer = 0;
     let Player = 0;
-    while(i<=5||j<=5)  {
+    while(i<=5 && j<=5)  {
         let player = window.prompt("Rock paper or scissors?");
         let computer = computerPlay();
         let decision = playSingleRound(player, computer);
