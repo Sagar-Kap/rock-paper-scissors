@@ -7,9 +7,10 @@ function computerPlay() {
     return options[getRandomInt(3)];
 }
 
-function playSingleRound(player, computer) {
-    let playerSelection = player.toLowerCase();
-    let computerSelection = computer.toLowerCase();
+function playSingleRound() {
+
+    let computerSelection = computerPlay();
+    let playerSelection = "rock";
 
     if (playerSelection === computerSelection) {
         return "It was a tie";    
@@ -37,56 +38,11 @@ function playSingleRound(player, computer) {
     }
 }
 
-function game() {
-    let i=1;
-    let j=1;
-    let Computer = 0;
-    let Player = 0;
-    while(i<=5 && j<=5)  {
-        let player = window.prompt("Rock paper or scissors?");
-        let computer = computerPlay();
-        let decision = playSingleRound(player, computer);
-        if (decision === "It was a tie") {
-            console.log("It was a Tie, Try again");
-            console.log(`Player ${Player} and Computer ${Computer}`);
-            continue; 
-        }
-        else if (decision==="Computer wins"){
-            Computer++;
-            console.log("Computer wins this round");
-            j++;
-            console.log(`Player ${Player} and Computer ${Computer}`); 
-            if (Player === 5){
-                console.log (`Congratulation! You won ${Player}-${Computer} while playing with a machine!`);
-            }
-            else if (Computer === 5){
-                console.log (`Whoops, You lost ${Player}-${Computer} while playing with a machine.`);
-            }
-            else {
-                continue;
-            }
-        }
-        else if (decision==="Player wins") {
-            Player++;
-            console.log("Player wins this round");
-            i++;
-            console.log(`Player ${Player} and Computer ${Computer}`);
-            if (Player === 5){
-                console.log (`Congratulation! You won ${Player}-${Computer} while playing with a machine!`);
-            }
-            else if (Computer === 5){
-                console.log (`Whoops, You lost ${Player}-${Computer} while playing with a machine.`);
-            }
-            else {
-                continue;
-            }
-        }
-        else {
-            console.log("You messed up big time");
-            console.log(`Player ${Player} and Computer ${Computer}`);
-            continue;
-        }
-    }
-}
+const selection = document.querySelectorAll("#rps");
 
-game();
+selection.forEach(button => button.addEventListener("click", playSingleRound));
+
+
+
+
+
