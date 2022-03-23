@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Rock Paper Scissors</title>
+        <title>⚡️ Rock & Rolla</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">  
         <script src="game.js" defer></script>
     </head>
     <body>
-        <button id="rps" data-button="rock">Rock</button>
-        <button id="rps" data-button="paper">Paper</button>
-        <button id="rps" data-button="scissors">Scissors</button>
+        <div class="top-bar">
+            <h1>Rock Paper Scissors</h1>
+        </div> 
+        <div class="initiate">
+            <h1 id="heading">First to score 5 points is the winner</h1>
+            <h3 id="footer-heading">Warning❗ Sound involved❗</h3>
+            <div class="match">
+                <div class="player">❓</div>
+                <div class="computer">❓</div>
+            </div>
+            <div class="score">
+                <div class="player-score">Player 0</div>
+                <div class="computer-score">Computer 0</div>
+            </div>
+        </div>
+        <div class="buttons"> 
+            <button class="button" id="rps" data-button="rock">✊</button>
+            <button class="button" id="rps" data-button="paper">✋</button>
+            <button class="button" id="rps" data-button="scissors">✌️</button>
+        </div>
+        <div class="result"></div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+         <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 id="modal-header-h2"></h2>
+            </div>
+            <div class="modal-body">
+                <p id="para"></p>
+            </div>
+            <div class="modal-footer">
+            <h3 id="modal-footer-h3"></h3>
+            </div>
+        </div> 
+
     </body>
-</html>
+</html> 

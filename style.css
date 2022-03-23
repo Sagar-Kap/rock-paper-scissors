@@ -1,0 +1,160 @@
+body {
+    background-color: rgb(59, 55, 55);
+}
+
+.match{
+  display: flex;
+  gap: 100px;
+  font-size: 90px;
+}
+
+.score{
+  display: flex;
+  gap: 100px;
+  font-size: 50px;
+}
+
+.initiate{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #4CAF50;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bolder;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: center;
+  color: rgb(201, 1, 1);
+  font-family: 'Monoton', cursive;
+  font-size: xx-large;
+  
+
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  
+}
+
+
+.result{
+    display: flex;
+    gap: 20px;
+    color: rgb(255, 0, 0);
+}
+
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+#heading {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+#footer-heading{
+  margin-top: 0%;
+  
+  font-size: x-large;
+}
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+
+  .modal-footer:hover,
+  .modal-footer:focus {
+    cursor: pointer;
+    color: rgb(189, 12, 12);
+  }
+
+  /* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Body */
+  .modal-body {padding: 2px 16px;}
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+
+  .button {
+    padding: 15px 25px;
+    font-size: 100px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
