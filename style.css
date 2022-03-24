@@ -59,6 +59,9 @@ body {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    font-size: x-large;
   }
   
   /* Modal Content/Box */
@@ -67,14 +70,14 @@ body {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 50%; /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */
   .close {
-    color: #aaa;
+    color: rgb(8, 33, 255);
     float: right;
-    font-size: 28px;
+    font-size: 68px;
     font-weight: bold;
   }
   
@@ -116,13 +119,15 @@ body {
   .modal-footer {
     padding: 2px 16px;
     background-color: #5cb85c;
-    color: white;
+    color: rgb(36, 5, 51);
+    display: flex;
+    justify-content: center;
   }
   
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #5cb85c;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
