@@ -6,4 +6,4 @@ A game developed for the Odin Project to Practice JS, HTML and CSS!
 
 Try out your luck!
 
-![Rock Paper Scissors!](/giphy.gif)
+![Rock Paper Scissors!](/media/giphy.gif)
